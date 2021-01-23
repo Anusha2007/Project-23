@@ -84,5 +84,11 @@ function draw() {
 function keyPressed(){
 	if (keyCode === DOWN_ARROW) {
 		Matter.Body.setStatic(packageBody,false);
-    }
+	}
+	if (keyCode === LEFT_ARROW){
+		helicopterSprite.x=helicopterSprite.x-2;
+	}
+	else if (keyCode === RIGHT_ARROW){
+		helicopterSprite.x=helicopterSprite.x+2;
+	}
 }
